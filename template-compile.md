@@ -1,7 +1,9 @@
-## template模块编译
-- - -
-template编译是从compileTemplate函数开始的，这个函数是在vue-plugin插件里面被执行的，options是它的参数，具体类型看typescript，source（template源码），id，filename是必传参数，其它非必传。最终返回
-编译后js代码（具体看代码块2）
+## template编译（template-compile）
+
+template编译是从compileTemplate函数开始的，这个函数是在vue-plugin插件里面被执行的，options是它的参数，具体类型看typescript，source（template源码），id，filename是必传参数，其它非必传。最终返回编译后js代码
+
+## template编译流程图
+<img src="./template-compile.png" alt="template-compile" style="zoom:50%;" />
 
 ```javascript
 export function compileTemplate(
