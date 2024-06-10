@@ -247,6 +247,7 @@ export function compileTemplate(
   }
 }
 ```
+<a href="doCompileTemplate.md">此处doCompileTemplate源码解析</a>
 代码块2
 ```javascript
 import { 
@@ -283,3 +284,4 @@ export function render(_ctx, _cache, $props, $setup, $data, $options) {
     )
 }
 ```
+
