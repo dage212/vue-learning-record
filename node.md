@@ -18,7 +18,7 @@ export interface RootNode extends Node {
   //   use: ['xlink:href', 'href'],
   // },
   cached: number
-  temps: number
+  temps: number //ssr模式ssrTransformElement中
   ssrHelpers?: symbol[] //这里存放的是ssr模式import需要引入的方法
   codegenNode?: TemplateChildNode | JSChildNode | BlockStatement //
   transformed?: boolean //是否被转换过
